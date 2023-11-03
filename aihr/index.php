@@ -14,7 +14,9 @@ session_start();
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -27,38 +29,19 @@ session_start();
         //Receive data from INPUT
         $p=$_POST;
         $user=$p['user'];
-        $pass=($p['pass']);
-        $logintype=$p['logintype'];
+        $pass=$p['pass']; //if wan encrpyt can put encrpt here
         //Import database connection
         include('inc/database.php');
-        if($logintype=='applicant')
-        {
-            $sql="SELECT * FROM applicant WHERE username='$user' AND password='$pass'";
-            $query=$conn->query($sql);
-            $result=mysqli_fetch_assoc($query);
-            if($result)//login success
-            {
-                header("Location:applicant");
-                //store session
-                $_SESSION['user_id']=$result['a_id'];
-            }
-            else//data not exist
-            {
-                //display error
-                $login_error='<div style="color:red;">Invalid User and Password</div>';
-            }
-
-        }
-        else if($logintype='hr')
-        {
-
+        
+        /* { */
+            //login coding can insert here
             header("Location:hr");
 
-        }
+        /* }
         else
         {
             $login_error='<div style="color:red;">Please select your role</div>';
-        }
+        } */
     }
     ?>
 
@@ -70,37 +53,18 @@ session_start();
     </div>
 
     <form method="post" action="">
-        <div class="mb-3" >
-            <table style="margin-left:auto; margin-right:auto;">
-                <tr>
-                    <td>
-                        <p style="margin-top:15px;" class="font-fredoka">I am </p>
-                    </td>
-                    <td>
-                        <input type="radio" id="applicant" name="logintype" value="applicant" style="margin-left:20px;" checked>
-                        <label for="applicant">Applicant</label> &emsp;
-                        <input type="radio" id="hr" name="logintype" value="hr">
-                        <label for="hr">HR</label>
 
-                    </td>
-                </tr>
-            </table>
+        <div class="mb-3">
+            <input type="text" name="user" class="form-control fonta" placeholder="Username" value="<?php echo $user?>">
         </div>
 
         <div class="mb-3">
-            <input type="text" name="user" class="form-control font-fredoka" placeholder="Username" value="<?php echo $user?>">
-        </div>
-
-        <div class="mb-3">
-            <input type="password" name="pass" class="form-control font-fredoka" placeholder="Password">
+            <input type="password" name="pass" class="form-control" placeholder="Password">
         </div>
         <table style="margin-left:auto; margin-right:auto;">
             <tr>
                 <td>
-                    <input type="submit" value="Login" name="login" class="btn btn-primary font-fredoka" style="width:100px; margin-left:10px; margin-right:10px;">
-                </td>
-                <td>
-                    <input type="submit" value="Sign up" name="signup" class="btn btn-primary font-fredoka" style="width:100px; margin-left:10px; margin-right:10px;">
+                    <input type="submit" value="Login" name="login" class="btn btn-primary" style="width:150px; margin-left:10px; margin-right:10px;">
                 </td>
             </tr>
         </table>
