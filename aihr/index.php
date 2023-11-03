@@ -88,6 +88,7 @@ session_start();
         align-items:center;
         background-image:url('assets/bg1.jpg');
         background-size:cover;
+        font-family: 'Poppins', sans-serif;
     }
 
     .login-box
