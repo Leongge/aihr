@@ -38,6 +38,64 @@ $sql="SELECT *
         ORDER BY f_id DESC
         LIMIT $offset, $total_records_per_page";
 
+$p=$_POST;
+//if button search clicked
+if(isset($_POST['search']))
+{
+  $job=$p['job'];
+  //set page to 1
+  $page_no = 1;
+  //Calculate offset value and set other variables
+  $offset = ($page_no-1) * $total_records_per_page;
+  $previous_page = $page_no - 1;
+  $next_page = $page_no + 1;
+  $adjacents = "2"; 
+  //Receive data from search
+  $input_search=$p['input_search'];
+
+  //Edit sql on search
+  $result_count = mysqli_query(
+    $conn,
+    "SELECT COUNT(*) As total_records FROM form WHERE f_job LIKE '%$job%' AND (f_name LIKE '%$input_search%' OR f_job LIKE '%$input_search%')"
+    );
+    $total_records = mysqli_fetch_array($result_count);
+    $total_records = $total_records['total_records'];
+    $total_no_of_pages = ceil($total_records / $total_records_per_page);
+    $second_last = $total_no_of_pages - 1; // total pages minus 1
+
+    $sql="SELECT *
+    FROM form
+    WHERE  f_job LIKE '%$job%' AND (f_name LIKE '%$input_search%' OR f_job LIKE '%$input_search%')
+    ORDER BY f_id DESC
+    LIMIT $offset, $total_records_per_page";
+}
+
+if(isset($_POST['clear']))
+{
+  //set page to 1 
+  $page_no = 1;
+  //Calculate offset value and set other variables
+  $offset = ($page_no-1) * $total_records_per_page;
+  $previous_page = $page_no - 1;
+  $next_page = $page_no + 1;
+  $adjacents = "2"; 
+  //After user search and wish to clear, sql edit to default
+  //Get total number of pages of pagination
+  $result_count = mysqli_query(
+    $conn,
+    "SELECT COUNT(*) As total_records FROM form"
+    );
+    $total_records = mysqli_fetch_array($result_count);
+    $total_records = $total_records['total_records'];
+    $total_no_of_pages = ceil($total_records / $total_records_per_page);
+    $second_last = $total_no_of_pages - 1; // total pages minus 1
+
+    $sql="SELECT*
+    FROM form
+    ORDER BY f_id DESC
+    LIMIT $offset, $total_records_per_page";
+}
+
 //Run query
 $query=$conn->query($sql);
 ?>
@@ -70,7 +128,7 @@ $query=$conn->query($sql);
                 $option =ucwords(strtolower($optionData['j_name']));
                 $id =$optionData['j_id'];
             ?>
-            <option value="<?php echo $id; ?>" ><?php echo $option; ?> </option>
+            <option value="<?php echo $option; ?>" ><?php echo $option; ?> </option>
         <?php
             }}
             ?>
