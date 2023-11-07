@@ -9,7 +9,7 @@ require __DIR__ . '/vendor/autoload.php'; // Remove this line if you use a PHP F
 use Orhanerday\OpenAi\OpenAi;
 
 $open_ai_key = getenv('OPENAI_API_KEY');
-$open_ai = new OpenAi("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");
+$open_ai = new OpenAi($open_ai_key);
 
 // Check if the form is submitted
 if (isset($_POST['send'])) {
