@@ -1,0 +1,20 @@
+[07-Nov-2023 03:16:43 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'smarthr'@'139.162.18.125' to database 'aihr' in /home3/leongcof/smarthr.leongge.com/inc/database.php on line 15
+[07-Nov-2023 03:16:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:17:07 UTC] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'smarthr'@'139.162.18.125' to database 'aihr' in /home3/leongcof/smarthr.leongge.com/inc/database.php on line 15
+[07-Nov-2023 03:17:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:19:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:23:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:27:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:41:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:43:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:46:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:46:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 03:47:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/leongcof/smarthr.leongge.com/index.php:5) in /home3/leongcof/smarthr.leongge.com/index.php on line 38
+[07-Nov-2023 14:40:34 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home3/leongcof/smarthr.leongge.com/signup.php on line 78
+[07-Nov-2023 14:40:48 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home3/leongcof/smarthr.leongge.com/signup.php on line 78
+[07-Nov-2023 15:08:14 UTC] PHP Notice:  Undefined index: hr_name in /home3/leongcof/smarthr.leongge.com/signup.php on line 19
+[07-Nov-2023 15:08:14 UTC] PHP Notice:  Undefined index: username in /home3/leongcof/smarthr.leongge.com/signup.php on line 26
+[07-Nov-2023 15:08:14 UTC] PHP Notice:  Undefined index: password in /home3/leongcof/smarthr.leongge.com/signup.php on line 33
+[07-Nov-2023 15:09:41 UTC] PHP Notice:  Undefined index: hr_name in /home3/leongcof/smarthr.leongge.com/signup.php on line 19
+[07-Nov-2023 15:09:41 UTC] PHP Notice:  Undefined index: username in /home3/leongcof/smarthr.leongge.com/signup.php on line 26
+[07-Nov-2023 15:09:41 UTC] PHP Notice:  Undefined index: password in /home3/leongcof/smarthr.leongge.com/signup.php on line 33

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "smalot/pdfparser": "^2.7",
+        "orhanerday/open-ai": "^4.9"
+    }
+}
