@@ -67,6 +67,11 @@ session_start();
                     <input type="submit" value="Login" name="login" class="btn btn-primary" style="width:150px; margin-left:10px; margin-right:10px;">
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="signup.php" class="btn btn-primary" style="width:150px; margin-left:10px; margin-right:10px; margin-top:5px;">Sign Up</a>
+                </td>
+            </tr>
         </table>
         <?php
             //Display Error Login if Invalid username and password
