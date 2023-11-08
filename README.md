@@ -8,6 +8,7 @@
     <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#future-enhancement">Future Enhancement</a></li>
     <li><a href="#dev-team">Dev Team</a></li>
     <li><a href="#current-version">Current Version</a></li>
   </ol>
@@ -70,6 +71,11 @@ SetEnv OPENAI_API_KEY 'your API key'
    ![image](https://github.com/Leongge/aihr/assets/143370605/adf74ca6-f0fc-4f47-8af8-49d42c6699a1)
 8. Logout
    ![image](https://github.com/Leongge/aihr/assets/143370605/47bb8a56-33ee-47c1-bb34-c3dc824d354b)
+
+## Future Enhancement
+1. Detailed Qualification Statistic for each candidates.
+2. Integrate into existing HR system.
+3. Add multiple file at once.
 
 ## Dev Team
 > Khor Chun Leong
