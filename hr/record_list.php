@@ -107,7 +107,7 @@ ob_end_flush();
     <a class="nav-link" aria-current="page" href="index.php">Dashboard</a>
     <a class="nav-link active" href="record_list.php">Records</a>
     <a class="nav-link" href="job.php">Job</a>
-    <a class="nav-link" href="logout.php">Logout</a>
+    <a class="nav-link" href="logout.php" onclick=" return confirm('Are You sure you want to logout?');">Logout</a>
 </nav>
 
 <div class="container">
