@@ -7,7 +7,6 @@
     <li><a href="#built-with">Built with</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#future-enhancement">Future Enhancement</a></li>
     <li><a href="#dev-team">Dev Team</a></li>
     <li><a href="#current-version">Current Version</a></li>
@@ -52,25 +51,6 @@ composer require smalot/pdfparser
 ```
 SetEnv OPENAI_API_KEY 'your API key'
 ```
-
-## Usage
-
-1. Login
-   ![image](https://github.com/Leongge/aihr/assets/143370605/8b951fae-ac5e-4bc9-a65e-c7f647592052)
-2.Dashboard
-   ![image](https://github.com/Leongge/aihr/assets/143370605/f705dd0e-8921-4d62-b654-1d06f7b0e1c2)
-3. Record page
-   ![image](https://github.com/Leongge/aihr/assets/143370605/77294ea6-2bc2-4a69-8b72-aa7e808c3960)
-4. Record detail
-   ![image](https://github.com/Leongge/aihr/assets/143370605/6b3dceb8-fffc-4f97-b1e5-d403e50a6226)
-5. Job list
-   ![image](https://github.com/Leongge/aihr/assets/143370605/bcb0e4c3-0935-4b39-bda5-2b6570200d14)
-6. Add Job
-   ![image](https://github.com/Leongge/aihr/assets/143370605/f678666b-094f-4bb5-a5ed-c995b5c89980)
-7. Job Detail
-   ![image](https://github.com/Leongge/aihr/assets/143370605/adf74ca6-f0fc-4f47-8af8-49d42c6699a1)
-8. Logout
-   ![image](https://github.com/Leongge/aihr/assets/143370605/47bb8a56-33ee-47c1-bb34-c3dc824d354b)
 
 ## Future Enhancement
 1. Detailed Qualification Statistic for each candidates.
