@@ -21,9 +21,27 @@ AIHR is a solution to help enhance the efficiency of hiring process using Artifi
 
 ## Installation
 1. Install orhanerday package via composer:
-> comopser require orhanerday/
+```
+composer require orhanerday/open-ai
+```
+<sup>references : https://github.com/orhanerday/open-ai</sup>
+
+2. Install PDFParser package via composer :
+```
+composer require smalot/pdfparser
+```
+<sup>references : https://github.com/smalot/pdfparser</sup>
+
+3. Get a API KEY from https://openai.com/pricing
+4. Enter your API in .htaccess
+
+```
+SetEnv OPENAI_API_KEY 'your API key'
+```
 
 ## Usage
-1. Access the web interface in your browser at 'https://smarthr.leongge.com/'.
-2. Login
-3. 
+
+
+
+
+
