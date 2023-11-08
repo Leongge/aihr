@@ -1,12 +1,8 @@
 # AIHR
-1. [ Overview ](#overview)
-2. [ Built with ](#built)
 
-<a name="overview"></a>
 ## Overview
 AIHR is a solution to help enhance the efficiency of hiring process using Artificial Intelligence (AI). HR professionals can use this tool to streamline candidate assessment and improve the quality of candidate selection.
 
-<a 
 ## Built with
 - [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://html.com/html5/)
 - [![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
@@ -24,7 +20,8 @@ AIHR is a solution to help enhance the efficiency of hiring process using Artifi
 6. **Ranked List**: The tool generates a ranked list of candidates in descending order of their compatibility with the job they applied for. HR professionals can easily identify the top candidates for each job opening.
 
 ## Installation
-1. Get a API key at https://openai.com/
+1. Install orhanerday package via composer:
+> comopser require orhanerday/
 
 ## Usage
 1. Access the web interface in your browser at 'https://smarthr.leongge.com/'.
