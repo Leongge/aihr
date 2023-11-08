@@ -1,5 +1,18 @@
 # AIHR
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#overview">overview</a></li>
+    <li><a href="#built-with">Built with</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#dev-team">Dev Team</a></li>
+    <li><a href="#current-version">Current Version</a></li>
+  </ol>
+</details>
+
 ## Overview
 AIHR is a solution to help enhance the efficiency of hiring process using Artificial Intelligence (AI). HR professionals can use this tool to streamline candidate assessment and improve the quality of candidate selection.
 
