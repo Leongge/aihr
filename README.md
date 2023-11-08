@@ -58,6 +58,16 @@ SetEnv OPENAI_API_KEY 'your API key'
 8. Logout
    ![image](https://github.com/Leongge/aihr/assets/143370605/47bb8a56-33ee-47c1-bb34-c3dc824d354b)
 
+## Dev Team
+> Khor Chun Leong
 
+>  Ng Man Yew
+
+>  Vincent Goh Kah Fung
+
+>  Fong Yung Xin
+
+### Current Version
+> 1.0.0
 
 
